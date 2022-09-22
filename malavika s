@@ -1,0 +1,8 @@
+temperature = 80 
+humidity = 60
+print("The value of temperature is :",temperature)
+print("The value of humidity is :",humidity)
+
+if( temperature >= 50 ):
+    print("The temperature is high")
+
