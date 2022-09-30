@@ -1,0 +1,46 @@
+1.Python code for blinking LED for Raspberry pi
+
+
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BOARD)
+
+GPIO.setup(3,GPIO.OUT)
+
+while True:
+      GPIO.output(3,True)
+      time.sleep(1)
+      GPIO.output(3,False)
+
+
+
+
+2.Python code for traffic light for Raspberry pi
+
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BOARD)
+
+red=7
+yellow=11
+green=13
+
+GPIO.setup(red, GPIO.OUT)
+GPIO.setup(yellow, GPIO.OUT)
+GPIO.setup(green, GPIO.OUT)
+
+while True:
+     GPIO.output(red,True)
+     sleep(3)
+     GPIO.output(red,False)
+
+     GPIO.output(yellow,True)
+     sleep(1)
+     GPIO.output(yellow,false)
+
+     GPIO.output(green,True)
+     sleep(3)
+     GPIO.output(green,false)
+GPIO.cleanup()
